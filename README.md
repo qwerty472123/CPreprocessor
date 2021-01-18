@@ -4,7 +4,7 @@ This is a part of course project in SEU. **THIS IS A TOY PROJECT ONLY.**
 
 This preprecessor support most of all standard directives and internal macros mentioned in [MSDN](https://docs.microsoft.com/zh-cn/cpp/preprocessor/c-cpp-preprocessor-reference?view=msvc-160).
 
-Before all operations, it will perform *Line splicing*("All lines ending in a backslash (**\**) immediately followed by a newline character are joined with the next line in the source file, forming logical lines from the physical lines. Unless it's empty, a source file must end in a newline character that's not preceded by a backslash."), and remove all comment without change lineno.
+Before all operations, it will perform *Line splicing*("All lines ending in a backslash (**\\**) immediately followed by a newline character are joined with the next line in the source file, forming logical lines from the physical lines. Unless it's empty, a source file must end in a newline character that's not preceded by a backslash."), and remove all comment without change lineno.
 
 ## Support directives
 
