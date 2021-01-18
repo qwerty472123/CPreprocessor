@@ -1,4 +1,4 @@
-# CPreprecessor
+# CPreprocessor
 
 This is a part of course project in SEU. **THIS IS A TOY PROJECT ONLY.**
 
@@ -75,8 +75,8 @@ Options:
 
 ## Passthrough
 
-* *String concatenation* should be performed after CPreprecessor.(for giving correct lineno to the following parser)
+* *String concatenation* should be performed after CPreprocessor.(for giving correct lineno to the following parser)
 * `# <lineno> "<filename>"` will be added for parser in following step to resolve lineno.
 * All `#line` and `#pragma`(without `#pragma once`) will be pass through.
-* CPreprecessor won't parse functions, so the predefined identifier(this is not a macro) `__func__`  won't be replaced by the correct function name.
+* CPreprocessor won't parse functions, so the predefined identifier(this is not a macro) `__func__`  won't be replaced by the correct function name.
 
