@@ -59,6 +59,20 @@ Clear the defined macro.
 * `__FILE__` the name of current file.(It will covered user-define while switching file.)
 * `__LINE__` the lineno of current file.
 
+## Usage
+
+```plain
+CPreprocessor [options...] [c files...]
+Options:
+-h | --help | /?        show this text
+-m | --multi-thread     use multi thread to assemble
+-s | --show-level       define the output show level (verbose|detail|infomation|warning|error|critical)
+-f | --overwrite        force overwrite file
+-o | --output-directoy <directory>      output directory
+-of | --output-file <filename>  output file name
+-i | --include-path <directory> add an include path
+```
+
 ## Passthrough
 
 * *String concatenation* should be performed after CPreprecessor.(for giving correct lineno to the following parser)
