@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CPreprocessor": {
+      "commandName": "Project",
+      "commandLineArgs": "-f \"C:\\Users\\4qwer\\Desktop\\CPreprocessor\\bin\\Release\\net5.0\\std.c\""
+    }
+  }
+}
