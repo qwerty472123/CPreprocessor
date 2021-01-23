@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Concurrent;
 using System.Dynamic;
 using System.Globalization;
 using System.IO;
@@ -283,7 +284,7 @@ namespace CPreprocessor
         private HashSet<string> included = new HashSet<string>();
         private List<string> opened = new List<string>();
         private HashSet<string> once = new HashSet<string>();
-        private static Dictionary<string, string> fileTextCache = new Dictionary<string, string>();
+        private static ConcurrentDictionary<string, string> fileTextCache = new ConcurrentDictionary<string, string>();
         public string GetIncludeFileName(string name, bool isStd = false)
         {
             if (!isStd)
